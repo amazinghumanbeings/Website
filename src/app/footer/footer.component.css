@@ -1,0 +1,90 @@
+.h4 {
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.FooterSection {
+    margin-top: 8%;
+    border-top: solid 1px rgb(197, 197, 197);
+}
+
+.footer {
+    margin-left: 0px;
+    padding: 70px;
+}
+
+.footer-copyright {
+    bottom: 0;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-title {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+.icon {
+    color: gray;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.segment-four form input[type=submit] {
+    border: none;
+    padding: 3px 15px;
+    margin-left: -5px;
+    text-transform: upper case;
+}
+
+.a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+a:visited {
+    color: grey;
+}
+
+
+/* sets visited link color */
+
+a:active {
+    color: grey;
+}
+
+
+/* sets active link color */
+
+a:link {
+    color: grey;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.fb-like {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.fb-like button {
+    padding: 2px;
+}
+
+.fb-like span {
+    padding: 5px;
+}

@@ -1,0 +1,120 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Session</li>
+    </ol>
+</nav>
+
+<!--Session Cards-->
+<div class="row">
+    <div class="col-lg-4 col-sm-6">
+        <div class="card-box bg-blue">
+            <div class="inner">
+                <h3> 0/257 </h3>
+                <p> Sessions Hosted </p>
+            </div>
+            <div class="icon">
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            </div>
+            <a href="#" class="card-box-footer">To Host <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-6">
+        <div class="card-box bg-green">
+            <div class="inner">
+                <h3> 0/257 </h3>
+                <p> Sessions Participated </p>
+            </div>
+            <div class="icon">
+                <i class="	fa fa-check-square-o" aria-hidden="true"></i>
+            </div>
+            <a href="#" class="card-box-footer">To Participate <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+        <div class="card-box bg-orange">
+            <div class="inner">
+                <h3> 0/257 </h3>
+                <p> Sessions Offered </p>
+            </div>
+            <div class="icon">
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
+            </div>
+            <a href="#" class="card-box-footer">To Offer <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<!-- Session Buttons-->
+<div class="row">
+    <div class="col-lg-3 col-sm-6 line">
+        <div class="title-box ">
+            <a href='#'>Open Sessions</a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 line">
+        <div class="title-box ">
+            <a href='#'>Old Sessions</a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 line">
+        <div class="title-box ">
+            <a href='#'>My Sessions</a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <div class="title-box ">
+            <a href='#'>My Favourites</a>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+
+
+
+<!--Session Table-->
+<kendo-grid [kendoGridBinding]="gridView" kendoGridSelectBy="id" [selectedKeys]="mySelection" [pageSize]="pageSize" [pageable]="true" [sortable]="true" [groupable]="false" [reorderable]="true" [resizable]="true" [height]="662" [columnMenu]="{ filter: true }">
+    <ng-template kendoGridToolbarTemplate>
+        <label for="sel1">Select Page Entries:</label>
+        <select class="form-control" id="sel1" name="sellist1">
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+                <option>40</option>
+        </select>
+        <input placeholder="Search in all columns..." kendoTextBox (input)="onFilter($event.target.value)" style="width: 20%; margin: 5px; padding: 20px;float:right" />
+    </ng-template>
+    <kendo-grid-column field="id" title="Session Number" [width]="200" [style]="{'text-align': 'center'}" [headerStyle]="{'font-weight':'bold','text-align':'center'}">
+    </kendo-grid-column>
+    <kendo-grid-column field="speaker" title="Speaker" [width]="220" [headerStyle]="{'font-weight':'bold','text-align':'center'}">
+        <ng-template kendoGridCellTemplate let-dataItem>
+            <div class="customer-photo" [ngStyle]="{'background-image' : 'url('+ dataItem.speaker_pic+ ')'}"></div>
+            <div class="customer-name">{{ dataItem.speaker }}</div>
+        </ng-template>
+    </kendo-grid-column>
+    <kendo-grid-column field="host" title="Host" [width]="220" [headerStyle]="{'font-weight':'bold','text-align':'center'}">
+        <ng-template kendoGridCellTemplate let-dataItem>
+            <div class="customer-photo" [ngStyle]="{'background-image' : 'url('+ dataItem.host_pic+ ')'}"></div>
+            <div class="customer-name">{{ dataItem.host }}</div>
+        </ng-template>
+    </kendo-grid-column>
+    <kendo-grid-column field="topic" title="Topic" [width]="200" [style]="{'text-align': 'center'}" [headerStyle]="{'font-weight':'bold','text-align':'center'}">
+        <ng-template kendoGridCellTemplate let-dataItem>
+            <div class="">{{ dataItem.topic }}</div>
+            <div class="icon cell-icon">
+                <a href=''><i class="fa fa-twitter cell-icon" aria-hidden="true"></i></a>
+                <a href=''><i class="fa fa-facebook cell-icon" aria-hidden="true"></i></a>
+                <a href=''><i class="fa fa-instagram cell-icon" aria-hidden="true"></i></a>
+                <a href=''><i class="fa fa-youtube-play cell-icon" aria-hidden="true"></i></a>
+                <a href=''><i class="fa fa-linkedin cell-icon" aria-hidden="true"></i></a>
+            </div>
+        </ng-template>
+    </kendo-grid-column>
+    <kendo-grid-column field="dt" title="Date and Time" [width]="200" [style]="{'text-align': 'center'}" [headerStyle]="{'font-weight':'bold','text-align':'center'}">
+    </kendo-grid-column>
+</kendo-grid>

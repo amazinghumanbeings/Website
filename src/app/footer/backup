@@ -1,0 +1,128 @@
+// html
+
+<div class="FooterSection">
+    <footer class="container py-2">
+    
+        <div>
+            <p style="text-align: center; color: black; margin-top: 5%;">"The purpose of life is to live it, to taste experience to the utmost, <br /> to reach out eagerly and without fear for newer and richer experience."
+            </p>
+            <hr style="background:#eba434; height: 1px; width: 30%;" />
+        </div>
+
+        <div class="row" style=" margin-top: 5%;">
+
+            <div class="col-2 col-md">
+                <h5>About Us</h5>
+                <hr style="background:#eba434; height: 1px; width: 40%;" />
+                
+            </div>
+
+            <div class="col-2 col-md">
+                <h5>Our Story</h5>
+                <hr style="background:#eba434; height: 1px; width: 40%;" />
+                
+            </div>
+
+            <div class="col-2 col-md">
+                <h5>Our Initiative</h5>
+                <hr style="background:#eba434; height: 1px; width: 40%;" />
+                
+            </div>
+
+            <div class="col-2 col-md">
+                <h5>Our Team</h5>
+                <hr style="background:#eba434; height: 1px; width: 40%;" />
+            
+            </div>
+
+            <div class="col-2 col-md">
+                <h5>Site Maps</h5>
+                <hr style="background:#eba434; height: 1px; width: 40%;" />
+                <ul class="list-unstyled text-small" style="padding-left:40px">
+                    <li><a class="text-muted" href="session">Session</a></li>
+                    <li><a class="text-muted" href="session/view-session">View Session</a></li>
+                    <li><a class="text-muted" href="initiative">Initiatives</a></li>
+                    <li><a class="text-muted" href="team">Team</a></li>
+                    <li><a class="text-muted" href="profile">Profile</a></li>
+                    <li><a class="text-muted" href="profile/view-profile">View Profile</a></li>
+                </ul>
+            </div>
+
+            <div class="socialIcons_box col-2 col-md">
+                <h5 style="text-align: center;">Connect with us</h5>
+                <hr style="background:#eba434; height: 1px; width: 40%;" />
+                <!--div class="social_icons text-center center-block" style="margin-top: -20px;">
+                    <br />
+                    <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                    <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                    <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                    <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                </div-->
+            </div>
+
+        </div>
+        <br><br><br><br>
+        <div>
+            <p style="text-align: center; border-top: solid 1px black;">&copy; 2020 AmazingHumanBeing, Inc.
+        </div>
+    </footer>
+</div>
+
+
+
+
+
+
+
+
+// styles
+.FooterSection {
+    margin-top: 8%;
+    border-top: solid 1px rgb(197, 197, 197);
+    ;
+}
+
+h5 {
+    text-align: center;
+}
+
+.social_icon {
+    padding-left: 3rem;
+}
+
+.social:hover {
+    transform: scale(1.1);
+}
+
+.social {
+    transform: scale(0.8);
+    /* Browser Variations: */
+    transition-duration: 0.5s;
+}
+
+
+/*
+   Multicoloured Hover Variations
+*/
+
+#social-fb:hover {
+    color: #3B5998;
+}
+
+#social-tw:hover {
+    color: #4099FF;
+}
+
+#social-gp:hover {
+    color: #d34836;
+}
+
+#social-em:hover {
+    color: #f39c12;
+}
+
+@media only screen and (max-width:420px) {
+    .socialIcons_box {
+        margin-left: 25%;
+    }
+}

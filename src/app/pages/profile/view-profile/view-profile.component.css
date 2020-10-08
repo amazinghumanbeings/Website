@@ -1,0 +1,336 @@
+form .form-fields {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    display: inline-flex;
+    padding: 10px 0px 5px 0px;
+    border-radius: 25px;
+    width: 50%;
+    margin: auto 2% auto 26%
+}
+
+.form-fields .form-control {
+    border-radius: 20px;
+}
+
+form button {
+    margin-bottom: 0px !important;
+    margin-left: 20px;
+    padding: 8px 40px;
+    border-radius: 20px;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+    padding: 10px 15px;
+}
+
+
+/*
+.profile {
+    display: inline-flex;
+    align-items: center;
+}*/
+
+.profile .pic .card {
+    border: none;
+}
+
+.profile .pic .card>img {
+    height: 290px;
+    border-radius: 50%;
+}
+
+.profile .pic .card .card-body .social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+}
+
+.details {
+    border-left: 2px solid lightgray;
+}
+
+.details .nav-tabs .active {
+    background: dodgerblue;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+/* MySkills */
+
+.MySkills .MySkillsButtons {
+    margin: 20px 10px;
+}
+
+.MySkills .MySkillsButtons>button {
+    margin: auto 5px;
+    padding: 5px 20px;
+}
+
+.MySkillsBadges {
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+.MySkillsBadges .badger {
+    display: inline-table;
+    text-align: center;
+    margin: 10px 25px;
+    width: min-content;
+}
+
+.MySkillsBadges .badger>img {
+    width: 60px;
+    height: 60px;
+}
+
+.MySkillsUsers {
+    padding-left: 20px;
+}
+
+.MySkillsUsers>h4 {
+    margin-bottom: 1rem;
+}
+
+.MySkillsUsers .Users .card {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    display: inline-flex;
+    text-align: center;
+    margin: 10px;
+}
+
+.MySkillsUsers .Users .card>img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.MySkillsUsers .Users .card-body {
+    padding: 5px 1px;
+    font-size: 10px;
+}
+
+
+/* MyHobbies */
+
+.MyHobbies .MyHobbiesButtons {
+    margin: 20px 10px;
+}
+
+.MyHobbies .MyHobbiesButtons>button {
+    margin: auto 5px;
+    padding: 5px 20px;
+}
+
+.MyHobbiesBadges {
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+.MyHobbiesBadges .badger {
+    display: inline-table;
+    text-align: center;
+    margin: 10px 25px;
+    width: min-content;
+}
+
+.MyHobbiesBadges .badger>img {
+    width: 60px;
+    height: 60px;
+}
+
+.MyHobbiesUsers {
+    padding-left: 20px;
+}
+
+.MyHobbiesUsers>h4 {
+    margin-bottom: 1rem;
+}
+
+.MyHobbiesUsers .Users .card {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    display: inline-flex;
+    text-align: center;
+    margin: 10px;
+}
+
+.MyHobbiesUsers .Users .card>img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.MyHobbiesUsers .Users .card-body {
+    padding: 5px 1px;
+    font-size: 10px;
+}
+
+
+/* ICanOffer */
+
+.ICanOffer .ICanOfferButtons {
+    margin: 20px 10px;
+}
+
+.ICanOffer .ICanOfferButtons>button {
+    margin: auto 5px;
+    padding: 5px 20px;
+}
+
+.ICanOffer .ICanOfferText {
+    margin: 20px auto;
+}
+
+.ICanOffer .ICanOfferText .input-group {
+    margin-bottom: 5px;
+}
+
+.ICanOfferUsers {
+    padding-left: 20px;
+}
+
+.ICanOfferUsers>h4 {
+    margin-bottom: 1rem;
+}
+
+.ICanOfferUsers .Users .card {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    display: inline-flex;
+    text-align: center;
+    margin: 10px;
+}
+
+.ICanOfferUsers .Users .card>img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.ICanOfferUsers .Users .card-body {
+    padding: 5px 1px;
+    font-size: 10px;
+}
+
+
+/* Initiative */
+
+.Initiative .InitiativeButtons {
+    margin: 20px 10px;
+}
+
+.Initiative .InitiativeButtons>button {
+    margin: auto 5px;
+    padding: 5px 20px;
+}
+
+.Initiative .InitiativeText {
+    margin: 20px auto;
+}
+
+.Initiative .InitiativeText .input-group {
+    margin-bottom: 5px;
+}
+
+.InitiativeUsers {
+    padding-left: 20px;
+}
+
+.InitiativeUsers>h4 {
+    margin-bottom: 1rem;
+}
+
+.InitiativeUsers .Users .card {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    display: inline-flex;
+    text-align: center;
+    margin: 10px;
+}
+
+.InitiativeUsers .Users .card>img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.InitiativeUsers .Users .card-body {
+    padding: 5px 1px;
+    font-size: 10px;
+}
+
+
+/* Impact */
+
+.Impact .ImpactButtons {
+    margin: 20px 10px;
+}
+
+.Impact .ImpactButtons>button {
+    margin: auto 5px;
+    padding: 5px 20px;
+}
+
+.Impact .ImpactCards .card {
+    display: inline-flex;
+    width: 46%;
+    margin: 2%;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.Impact .ImpactCards .card .row .badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Impact .ImpactCards .card .row .card-img {
+    width: 50px;
+    height: 50px;
+}
+
+.Impact .ImpactCards .card .row .card-body {
+    Color: white;
+}
+
+.ImpactUsers {
+    padding-left: 20px;
+}
+
+.ImpactUsers>h4 {
+    margin-bottom: 1rem;
+}
+
+.ImpactUsers .Users .card {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    display: inline-flex;
+    text-align: center;
+    margin: 10px;
+}
+
+.ImpactUsers .Users .card>img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.ImpactUsers .Users .card-body {
+    padding: 5px 1px;
+    font-size: 10px;
+}
