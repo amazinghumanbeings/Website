@@ -1,0 +1,36 @@
+.contain {
+    padding: 50px 20px;
+    margin: 50px auto;
+}
+
+.col-sm-4 {
+    padding: 0px 50px !important;
+}
+
+.contain .head {
+    text-align: center;
+    margin: 50px auto;
+    color: #333333 !important;
+    font-weight: bold;
+}
+
+.contain .head:before {
+    content: "";
+    display: block;
+    margin: 15px auto;
+    width: 5%;
+    border-top: 2px solid #333333;
+}
+
+.icon {
+    padding: 20px;
+    text-align: center;
+}
+
+.icon img {
+    width: 40px;
+}
+
+.title {
+    text-align: center;
+}

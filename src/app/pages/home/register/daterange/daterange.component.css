@@ -1,0 +1,11 @@
+label {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+    color: #656565;
+}

@@ -1,0 +1,25 @@
+.contain {
+    padding: 50px 20px;
+    margin: 50px auto;
+}
+
+.contain .head {
+    text-align: center;
+    margin: 50px auto;
+    color: #333333 !important;
+    font-weight: bold;
+}
+
+.contain .head:before {
+    content: "";
+    display: block;
+    margin: 15px auto;
+    width: 5%;
+    border-top: 2px solid #333333;
+}
+
+h6 {
+    color: #008489;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dce6e7;
+}

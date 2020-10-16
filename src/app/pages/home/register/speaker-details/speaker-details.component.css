@@ -1,0 +1,22 @@
+img {
+    border-radius: 100px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+
+.card {
+    width: 12rem;
+    border: none;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.row .name {
+    display: flex;
+}
+
+.row .name .lname {
+    margin-left: 10px;
+}

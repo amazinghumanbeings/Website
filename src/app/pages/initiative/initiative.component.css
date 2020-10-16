@@ -11,8 +11,8 @@
 
 .container-card {
     position: relative;
-    height: 500px;
-    width: 400px;
+    height: 430px;
+    width: 360px;
     overflow: hidden;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.3s ease-out;
@@ -152,7 +152,7 @@
 .contain .join-button {
     position: absolute;
     bottom: 10px;
-    left: 84px;
+    left: 64px;
 }
 
 .contain .join-button button {

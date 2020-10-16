@@ -3,12 +3,22 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { GridModule, PDFModule, ExcelModule } from '@progress/kendo-angular-grid';
-import { InputsModule } from '@progress/kendo-angular-inputs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ClickOutsideModule } from 'ng-click-outside';
+
 import { ExcelExportModule } from '@progress/kendo-angular-excel-export';
 import { PDFExportModule } from '@progress/kendo-angular-pdf-export';
-// import { AngularFireModule } from '@angular/fire';
+import { GridModule, PDFModule, ExcelModule } from '@progress/kendo-angular-grid';
+import { InputsModule } from '@progress/kendo-angular-inputs';
+import { IntlModule } from '@progress/kendo-angular-intl';
+import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+import { LabelModule } from '@progress/kendo-angular-label';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 // Component
 import { AppComponent } from './app.component';
@@ -26,11 +36,31 @@ import { Chart1Component } from './pages/profile/view-profile/chart1/chart1.comp
 import { Chart2Component } from './pages/profile/view-profile/chart2/chart2.component';
 import { DreamComponent } from './pages/dream/dream.component';
 import { HomeComponent } from './pages/home/home.component';
-import { AuthModule } from './auth/auth.module';
 import { ErrorComponent } from './pages/error/error.component';
 import { RegisterComponent } from './pages/home/register/register.component';
+import { FirebaseService } from './services/firebase.service';
+import { SigninComponent } from './firebase-auth/signin/signin.component';
+import { SignupComponent } from './firebase-auth/signup/signup.component';
+import { ForgotComponent } from './firebase-auth/forgot/forgot.component';
+import { environment } from 'src/environments/environment';
 
 
+import { 
+  MatDatepickerModule,
+  MatFormFieldModule, 
+  MatInputModule,
+  MatNativeDateModule
+ } from '@angular/material';
+import { DaterangeComponent } from './pages/home/register/daterange/daterange.component';
+import { SpeakerDetailsComponent } from './pages/home/register/speaker-details/speaker-details.component';
+import { ContactDetailsComponent } from './pages/home/register/contact-details/contact-details.component';
+import { SessionDetailsComponent } from './pages/home/register/session-details/session-details.component';
+import { AttendDetailsComponent } from './pages/home/register/attend-details/attend-details.component';
+import { HowWorksComponent } from './pages/home/how-works/how-works.component';
+import { NumberStoryComponent } from './pages/home/number-story/number-story.component';
+import { JoinTeamComponent } from './pages/home/join-team/join-team.component';
+import { FaqComponent } from './pages/home/faq/faq.component';
+import { EntryComponent } from './firebase-auth/entry/entry.component';
 
 
 
@@ -54,31 +84,54 @@ import { RegisterComponent } from './pages/home/register/register.component';
     HomeComponent,
     ErrorComponent,
     RegisterComponent,
+    SigninComponent,
+    SignupComponent,
+    ForgotComponent,
+    DaterangeComponent,
+    SpeakerDetailsComponent,
+    ContactDetailsComponent,
+    SessionDetailsComponent,
+    AttendDetailsComponent,
+    HowWorksComponent,
+    NumberStoryComponent,
+    JoinTeamComponent,
+    FaqComponent,
+    EntryComponent
   ],
+
+
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     GridModule,
     FormsModule,
     ReactiveFormsModule,
+
+    ClickOutsideModule,
+
     PDFModule,
     ExcelModule,
     InputsModule,
-    BrowserAnimationsModule,
     ExcelExportModule,
     PDFExportModule,
-    // AngularFireModule.initializeApp({
-    //   apiKey: "AIzaSyDXR1jXBNsBD71MtxZfxRp82Zrgmvx4Rmc",
-    //   authDomain: "ahb-firebase-ng-auth.firebaseapp.com",
-    //   databaseURL: "https://ahb-firebase-ng-auth.firebaseio.com",
-    //   projectId: "ahb-firebase-ng-auth",
-    //   storageBucket: "ahb-firebase-ng-auth.appspot.com",
-    //   messagingSenderId: "177645311193",
-    //   appId: "1:177645311193:web:3bff6951a381766d15dac8"
-    // }),
-    AuthModule
+    
+    IntlModule,
+    DateInputsModule,
+    LabelModule,
+    
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatNativeDateModule,
+
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    AngularFireDatabaseModule
+    
   ],
-  providers: [],
+  providers: [FirebaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

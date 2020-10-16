@@ -1,0 +1,13 @@
+<div class="example-config">
+    <!-- Selected range: {{ range | json }} -->
+</div>
+<kendo-daterange style='display: flex;justify-content: space-evenly;'>
+    <label>
+        <span class="label">Start</span>
+        <kendo-dateinput kendoDateRangeStartInput [(value)]="range.start"></kendo-dateinput>
+    </label>
+    <label>
+        <span class="label">End</span>
+        <kendo-dateinput kendoDateRangeEndInput [(value)]="range.end"></kendo-dateinput>
+    </label>
+</kendo-daterange>
