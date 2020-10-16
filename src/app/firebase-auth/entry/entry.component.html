@@ -4,11 +4,11 @@
             <form action="#" class="sign-in-form">
                 <h2 class="title">Sign in</h2>
                 <div class="input-field">
-                    <i class="fas fa-user"></i>
+                    <i class="fa fa-user"></i>
                     <input type="email" placeholder="email" #email />
                 </div>
                 <div class="input-field">
-                    <i class="fas fa-lock"></i>
+                    <i class="fa fa-lock"></i>
                     <input type="password" placeholder="Password" #password />
                 </div>
                 <input type="submit" value="Login" class="btn solid" (click)="onSignIn(email.value, password.value)" />
@@ -31,11 +31,11 @@
             <form action="#" class="sign-up-form">
                 <h2 class="title">Sign up</h2>
                 <div class="input-field">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fa fa-envelope"></i>
                     <input type="email" placeholder="Email" #emailSignup/>
                 </div>
                 <div class="input-field">
-                    <i class="fas fa-lock"></i>
+                    <i class="fa fa-lock"></i>
                     <input type="password" placeholder="Password" #passwordSignup/>
                 </div>
                 <input type="submit" class="btn" value="Sign up" (click)="onSignup(emailSignup.value, passwordSignup.value)" />
