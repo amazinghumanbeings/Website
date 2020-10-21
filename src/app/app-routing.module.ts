@@ -14,8 +14,7 @@ import { ForgotComponent } from './firebase-auth/forgot/forgot.component';
 import { SignupComponent } from './firebase-auth/signup/signup.component';
 import { SigninComponent } from './firebase-auth/signin/signin.component';
 import { DaterangeComponent } from './pages/home/register/daterange/daterange.component';
-
-// import { ErrorComponent } from './pages/error/error.component';
+import { ErrorComponent } from './pages/error/error.component';
 
 
 const routes: Routes = [
@@ -34,7 +33,7 @@ const routes: Routes = [
   { path: "team", component: TeamComponent },
   { path: "contact-Us", component: ContactUsComponent },
   { path: '', pathMatch: 'full', redirectTo: 'home' },
-  // { path: '**', component: ErrorComponent }
+  { path: '**', component: ErrorComponent }
 ];
 
 

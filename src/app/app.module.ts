@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { ClickOutsideModule } from 'ng-click-outside';
 
@@ -45,12 +46,12 @@ import { ForgotComponent } from './firebase-auth/forgot/forgot.component';
 import { environment } from 'src/environments/environment';
 
 
-import { 
-  MatDatepickerModule,
-  MatFormFieldModule, 
-  MatInputModule,
-  MatNativeDateModule
- } from '@angular/material';
+// import { 
+//   MatDatepickerModule,
+//   MatFormFieldModule, 
+//   MatInputModule,
+//   MatNativeDateModule
+//  } from '@angular/material';
 import { DaterangeComponent } from './pages/home/register/daterange/daterange.component';
 import { SpeakerDetailsComponent } from './pages/home/register/speaker-details/speaker-details.component';
 import { ContactDetailsComponent } from './pages/home/register/contact-details/contact-details.component';
@@ -61,7 +62,9 @@ import { NumberStoryComponent } from './pages/home/number-story/number-story.com
 import { JoinTeamComponent } from './pages/home/join-team/join-team.component';
 import { FaqComponent } from './pages/home/faq/faq.component';
 import { EntryComponent } from './firebase-auth/entry/entry.component';
-
+import { RegisterSpeakerComponent } from './pages/home/register/register-speaker/register-speaker.component';
+import { RegisterParticipantComponent } from './pages/home/register/register-participant/register-participant.component';
+import { SessionSelectComponent } from './pages/home/register/session-select/session-select.component';
 
 
 
@@ -96,7 +99,10 @@ import { EntryComponent } from './firebase-auth/entry/entry.component';
     NumberStoryComponent,
     JoinTeamComponent,
     FaqComponent,
-    EntryComponent
+    EntryComponent,
+    RegisterSpeakerComponent,
+    RegisterParticipantComponent,
+    SessionSelectComponent
   ],
 
 
@@ -107,6 +113,8 @@ import { EntryComponent } from './firebase-auth/entry/entry.component';
     GridModule,
     FormsModule,
     ReactiveFormsModule,
+    BrowserModule,
+    FlexLayoutModule,
 
     ClickOutsideModule,
 
@@ -115,23 +123,25 @@ import { EntryComponent } from './firebase-auth/entry/entry.component';
     InputsModule,
     ExcelExportModule,
     PDFExportModule,
-    
+
     IntlModule,
     DateInputsModule,
     LabelModule,
-    
-    MatDatepickerModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatNativeDateModule,
+
+    // MatDatepickerModule,
+    // MatFormFieldModule,
+    // MatInputModule,
+    // MatNativeDateModule,
 
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireDatabaseModule
-    
+
   ],
-  providers: [FirebaseService],
+  providers: [
+    FirebaseService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

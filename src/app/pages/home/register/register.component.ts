@@ -7,78 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  template: boolean = false;
-  sessionTemplate: boolean = false;
-  attendTemplate: boolean = false;
-  dateTemplate: boolean = false;
-  speakerTemplate: boolean = false;
-  contactTemplate: boolean = false;
+  speakerTemplate: boolean = true;
+  participantTemplate: boolean = false;
+  speakerLine: boolean = true;
+  participantLine: boolean = false;
 
-  constructor() { }
-
-  ngOnInit() {
-
+  ngOnInit(){
 
   }
 
-  showSessionTemplate() {
-    this.template = true;
-    this.sessionTemplate = true;
-    this.attendTemplate = false;
-    this.dateTemplate = false;
-    this.speakerTemplate = false;
-    this.contactTemplate = false;
+  openSpeakerTemplate(){
 
-  }
-
-  showAttendTemplate() {
-    this.template = true;
-    this.attendTemplate = true;
-    this.sessionTemplate = false;
-    this.dateTemplate = false;
-    this.speakerTemplate = false;
-    this.contactTemplate = false;
-  }
-
-  showDateTemplate() {
-    this.template = true;
-    this.dateTemplate = true;
-    this.attendTemplate = false;
-    this.sessionTemplate = false;
-    this.speakerTemplate = false;
-    this.contactTemplate = false;
-  }
-
-  showSpeakerTemplate(){
-    this.template = true;
     this.speakerTemplate = true;
-    this.dateTemplate = false;
-    this.attendTemplate = false;
-    this.sessionTemplate = false;
-    this.contactTemplate = false;
+    this.participantTemplate = false;
+    this.speakerLine = true;
+    this.participantLine = false;
+
   }
 
-  showContactTemplate(){
-    this.template = true;
-    this.contactTemplate = true;
+  openParticipantTemplate(){
+
+    this.participantTemplate = true;
     this.speakerTemplate = false;
-    this.dateTemplate = false;
-    this.attendTemplate = false;
-    this.sessionTemplate = false;
-  }
+    this.participantLine = true;
+    this.speakerLine = false;
 
-  closeTemplate(){
-    this.template=false;
-    this.contactTemplate = false;
-    this.speakerTemplate = false;
-    this.dateTemplate = false;
-    this.attendTemplate = false;
-    this.sessionTemplate = false;
   }
-
-  onClickedOutside(e: Event) {
-    // this.template = false;
-  }
-
 
 }

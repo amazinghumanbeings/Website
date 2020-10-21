@@ -1,10 +1,16 @@
+.breadcrumb {
+    background-color: transparent;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 form .form-fields {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     display: inline-flex;
     padding: 10px 0px 5px 0px;
     border-radius: 25px;
     width: 50%;
-    margin: auto 2% auto 26%
+    margin: auto 1% auto 15%;
 }
 
 .form-fields .form-control {
@@ -16,12 +22,6 @@ form button {
     margin-left: 20px;
     padding: 8px 40px;
     border-radius: 20px;
-}
-
-.breadcrumb {
-    background-color: transparent;
-    font-size: 20px;
-    margin-bottom: 20px;
 }
 
 .title {
@@ -40,7 +40,7 @@ form button {
 }
 
 .profile .pic .card>img {
-    height: 290px;
+    /* height: 290px; */
     border-radius: 50%;
 }
 

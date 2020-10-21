@@ -1,0 +1,90 @@
+<div class='form-container' (click)='btnChange()'>
+    <div class="form-outer" (clickOutside)="onClickedOutside($event)">
+        <form class="form-inline">
+            <button (click)="showSessionTemplate()" class='input'>
+            <div class='head'>
+                Choose your favourite session
+            </div>
+            <div class="subhead">
+                Select the upcoming session by title and date
+            </div>
+            </button>
+
+            <div class="vl"></div>
+
+            <button class='input' (click)="showSpeakerTemplate()">
+            <div class='head'>
+                Participant Details
+            </div>
+            <div class="subhead">
+                Tell us about yourself
+            </div>
+            </button>
+
+            <div class="vl"></div>
+
+            <button class='input' (click)="showContactTemplate()">
+            <div class='head'>
+                Contact Information
+            </div>
+            <div class="subhead">
+                To reach out to you
+            </div>
+            </button>
+
+            <input type="text" class="form-control" id="SesionDetails">
+            <input type="text" class="form-control" id="DateRange">
+            <input type="text" class="form-control" id="Addtional">
+            <input type="text" class="form-control" id="AboutYou">
+            <input type="text" class="form-control" id="ContactDetails">
+            <button *ngIf='iconBtn' type="submit" class="custom-btn btn btn-primary" data-toggle="modal" data-target="#logModal">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+
+            <button *ngIf='searchBtn' type="submit" class="custom-search-btn btn btn-primary" data-toggle="modal" data-target="#logModal">
+                <i class="fa fa-search" aria-hidden="true" style='padding-right:8px'></i>
+                Search
+            </button>
+        </form>
+
+        <div *ngIf='template' class='templates'>
+
+            <div *ngIf='sessionTemplate' class="sessionTemplate">
+                <app-session-select></app-session-select>
+            </div>
+
+            <div *ngIf='speakerTemplate' class="speakerTemplate">
+                <app-speaker-details></app-speaker-details>
+            </div>
+
+            <div *ngIf='contactTemplate' class="contactTemplate">
+                <app-contact-details></app-contact-details>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="logModal" tabindex="-1" role="dialog" aria-labelledby="logModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body">
+                <app-entry></app-entry>
+            </div>
+            <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+        </div>
+    </div>
+</div>

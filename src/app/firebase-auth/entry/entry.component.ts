@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import { FirebaseService } from 'src/app/services/firebase.service';
 
 @Component({
@@ -6,25 +6,31 @@ import { FirebaseService } from 'src/app/services/firebase.service';
   templateUrl: './entry.component.html',
   styleUrls: ['./entry.component.css']
 })
-export class EntryComponent implements OnInit {
+export class EntryComponent implements AfterViewInit {
 
   isSignedIn: boolean = false;
 
   @Output() isLogout = new EventEmitter<void>()
   constructor(public firebaseService: FirebaseService) { }
 
-  ngOnInit() {
+  @ViewChild('signInBtn', {static:false}) signInBtn: any;
+  @ViewChild('signUpBtn', {static:false}) signUpBtn: any;
+  @ViewChild('contain', {static:false}) contain: any;
 
-    var sign_in_btn = document.querySelector("#sign-in-btn");
-    var sign_up_btn = document.querySelector("#sign-up-btn");
-    var contain = document.querySelector("#contain");
+  ngAfterViewInit() {
+    let signIn = this.signInBtn.nativeElement;
+    let signUp = this.signUpBtn.nativeElement;
+    let container = this.contain.nativeElement
+    // let sign_in_btn = document.querySelector("#sign-in-btn");
+    // let sign_up_btn = document.querySelector("#sign-up-btn");
+    // let contain = document.querySelector("#contain");
 
-    sign_up_btn.addEventListener("click", () => {
-      contain.classList.add("sign-up-mode");
+    signUp.addEventListener("click", () => {
+      container.classList.add("sign-up-mode");
     });
 
-    sign_in_btn.addEventListener("click", () => {
-      contain.classList.remove("sign-up-mode");
+    signIn.addEventListener("click", () => {
+      container.classList.remove("sign-up-mode");
     });
 
 
