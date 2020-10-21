@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { ClickOutsideModule } from 'ng-click-outside';
 
@@ -114,7 +113,6 @@ import { SessionSelectComponent } from './pages/home/register/session-select/ses
     FormsModule,
     ReactiveFormsModule,
     BrowserModule,
-    FlexLayoutModule,
 
     ClickOutsideModule,
 
