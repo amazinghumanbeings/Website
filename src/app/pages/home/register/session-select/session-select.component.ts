@@ -12,4 +12,8 @@ export class SessionSelectComponent implements OnInit {
   ngOnInit() {
   }
 
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
+  }
+
 }

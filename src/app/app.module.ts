@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ClickOutsideModule } from 'ng-click-outside';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 import { ExcelExportModule } from '@progress/kendo-angular-excel-export';
 import { PDFExportModule } from '@progress/kendo-angular-pdf-export';
@@ -14,6 +15,8 @@ import { InputsModule } from '@progress/kendo-angular-inputs';
 import { IntlModule } from '@progress/kendo-angular-intl';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { LabelModule } from '@progress/kendo-angular-label';
+
+import { MatMenuModule, MatDividerModule } from '@angular/material';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
@@ -44,13 +47,6 @@ import { SignupComponent } from './firebase-auth/signup/signup.component';
 import { ForgotComponent } from './firebase-auth/forgot/forgot.component';
 import { environment } from 'src/environments/environment';
 
-
-// import { 
-//   MatDatepickerModule,
-//   MatFormFieldModule, 
-//   MatInputModule,
-//   MatNativeDateModule
-//  } from '@angular/material';
 import { DaterangeComponent } from './pages/home/register/daterange/daterange.component';
 import { SpeakerDetailsComponent } from './pages/home/register/speaker-details/speaker-details.component';
 import { ContactDetailsComponent } from './pages/home/register/contact-details/contact-details.component';
@@ -64,6 +60,7 @@ import { EntryComponent } from './firebase-auth/entry/entry.component';
 import { RegisterSpeakerComponent } from './pages/home/register/register-speaker/register-speaker.component';
 import { RegisterParticipantComponent } from './pages/home/register/register-participant/register-participant.component';
 import { SessionSelectComponent } from './pages/home/register/session-select/session-select.component';
+import { SliderComponent } from './pages/home/slider/slider.component';
 
 
 
@@ -101,7 +98,8 @@ import { SessionSelectComponent } from './pages/home/register/session-select/ses
     EntryComponent,
     RegisterSpeakerComponent,
     RegisterParticipantComponent,
-    SessionSelectComponent
+    SessionSelectComponent,
+    SliderComponent
   ],
 
 
@@ -115,12 +113,16 @@ import { SessionSelectComponent } from './pages/home/register/session-select/ses
     BrowserModule,
 
     ClickOutsideModule,
+    SlickCarouselModule,
 
     PDFModule,
     ExcelModule,
     InputsModule,
     ExcelExportModule,
     PDFExportModule,
+
+    MatMenuModule,
+    MatDividerModule,
 
     IntlModule,
     DateInputsModule,

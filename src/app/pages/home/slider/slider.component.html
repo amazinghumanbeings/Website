@@ -1,0 +1,96 @@
+<div class="contain" #slider>
+
+
+    <div class="category-outer" (clickOutside)="onClickedOutside($event)">
+        <div class="category">
+            <button>Dates</button>
+            <button>Filter & Sort</button>
+
+            <div class="vl"></div>
+
+            <button>Cooking +</button>
+            <button>Dance +</button>
+            <button>Coding +</button>
+            <button>Web Development +</button>
+            <button>Writing +</button>
+            <button>Sports +</button>
+            <button>Arts +</button>
+            <button>Research +</button>
+            <button *ngIf="!categoryTemplate" (click)="openCategoryTemplate()"><i class="fa fa-angle-down"></i></button>
+            <button *ngIf="categoryTemplate" (click)="closeCategoryTemplate()"><i class="fa fa-angle-up"></i></button>
+        </div>
+
+        <div *ngIf="categoryTemplate" class="categoryTemplate">
+            <button>Cooking +</button>
+            <button>Dance +</button>
+            <button>Coding +</button>
+            <button>Web Development +</button>
+            <button>Writing +</button>
+            <button>Sports +</button>
+            <button>Arts +</button>
+            <button>Cooking +</button>
+            <button>Dance +</button>
+            <button>Coding +</button>
+            <button>Web Development +</button>
+            <button>Writing +</button>
+            <button>Sports +</button>
+            <button>Arts +</button>
+            <button>Cooking +</button>
+            <button>Dance +</button>
+            <button>Coding +</button>
+            <button>Web Development +</button>
+            <button>Writing +</button>
+            <button>Sports +</button>
+            <button>Arts +</button>
+            <button>Cooking +</button>
+            <button>Dance +</button>
+            <button>Coding +</button>
+            <button>Web Development +</button>
+            <button>Writing +</button>
+            <button>Sports +</button>
+            <button>Arts +</button>
+        </div>
+
+    </div>
+
+
+    <div class='row slider-title'>
+        <div class="title col-sm-8">
+            Session Experiences: All
+        </div>
+        <div class="count col-sm-4">
+            Show(30)
+        </div>
+    </div>
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+
+            <!-- <div class="card">
+                <img src="{{ slide.img }}" class="card-img-top" style="height:250px" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div> -->
+
+
+            <div class="blog-post">
+                <div class="blog-post_img">
+                    <img src="{{ slide.img }}" alt="post">
+                </div>
+                <div class="blog-post_info">
+                    <div class="blog-post_date">
+                        <span>Sunday</span>
+                        <span>October 27 2020</span>
+                    </div>
+                    <h1 class="blog-post_title">LTLC</h1>
+                    <p class="blog-post_text">
+                        "Lets talk Lets connect" is to connect people.
+                    </p>
+                    <a href="#" class="blog-post_cta">Read more</a>
+                </div>
+            </div>
+
+
+        </div>
+    </ngx-slick-carousel>
+</div>

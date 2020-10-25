@@ -13,7 +13,7 @@ export class RegisterComponent implements OnInit {
   participantLine: boolean = false;
 
   ngOnInit(){
-
+    
   }
 
   openSpeakerTemplate(){
@@ -33,5 +33,6 @@ export class RegisterComponent implements OnInit {
     this.speakerLine = false;
 
   }
+  
 
 }

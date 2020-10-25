@@ -5,5 +5,50 @@
 }
 
 
+/* Kendo Custom */
+
+.k-i-more-vertical::before {
+    content: "\e618" !important;
+}
+
+.k-dateinput {
+    width: 14em !important;
+}
+
+.k-dateinput-wrap {
+    border-radius: 15px !important;
+    border: 2px solid #E0E0E0 !important;
+}
+
+
+/* slick Module */
+
+.slick-prev:before,
+.slick-next:before {
+    color: #039be5 !important;
+    font-size: 40px !important;
+}
+
+.slick-prev,
+.slick-next {
+    top: 0 !important;
+    margin-top: -40px !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.slick-next {
+    right: 40px !important;
+}
+
+.slick-prev {
+    left: 90% !important;
+}
+
+.slick-slide {
+    outline: none !important;
+}
+
+
 /* html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */

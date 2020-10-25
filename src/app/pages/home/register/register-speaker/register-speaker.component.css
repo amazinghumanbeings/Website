@@ -1,7 +1,7 @@
 .form-container {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 10px 80px;
 }
 
 form {
@@ -19,9 +19,13 @@ form {
     text-align: left;
 }
 
+.form-inline button:last-child {
+    margin-left: auto;
+}
+
 form .vl {
     border-left: 2px solid #e6e6e6;
-    height: 25px;
+    height: 30px;
 }
 
 form .input:hover {
@@ -57,7 +61,7 @@ form .btn {
     border-radius: 30px;
     border: none;
     height: 50px;
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
 
 form .custom-btn {
