@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-session-select',
@@ -9,11 +10,6 @@ export class SessionSelectComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
-  // scroll(el: HTMLElement) {
-  //   el.scrollIntoView();
-  // }
+  ngOnInit() {}
 
 }
