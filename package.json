@@ -46,7 +46,6 @@
     "jquery": "^3.5.1",
     "ng-click-outside": "^7.0.0",
     "ngx-slick-carousel": "^0.5.1",
-    "popper.js": "^1.16.1",
     "rxjs": "~6.4.0",
     "slick-carousel": "^1.8.1",
     "tslib": "^1.10.0",
