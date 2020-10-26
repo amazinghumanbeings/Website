@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 declare var $: any;
 
 @Component({
@@ -8,40 +8,67 @@ declare var $: any;
 })
 export class HeaderComponent implements OnInit {
 
+  speakerTemplate: boolean = false;
+  participantTemplate: boolean = false;
+  speakerLine: boolean = false;
+  participantLine: boolean = false;
+  
+
+  openSpeakerTemplate()  {
+    this.speakerTemplate = true;
+    this.participantTemplate = false;
+    this.speakerLine = true;
+    this.participantLine = false;
+
+  }
+  
+
+  openParticipantTemplate() {
+
+    this.participantTemplate = true;
+    this.speakerTemplate = false;
+    this.participantLine = true;
+    this.speakerLine = false;
+
+  }
+
+  closeTemplates()  {
+    this.speakerTemplate = false;
+    this.participantTemplate = false;
+    this.speakerLine = false;
+    this.participantLine = false;
+
+  }
+
+  onClickOutside(e: Event){
+    this.closeTemplates();
+  }
+
   constructor() { }
+
 
   ngOnInit() {
 
-    var distance = $('#navbar').offset().top,
-      $window = $(window);
+    const callback = this;
 
-    $window.scroll(function () {
-      if ($window.scrollTop() >= distance) {
-        $('.navbar-custom').css("background-color", "royalblue");
-        $('.navbar-custom a').css('color', 'white');
-        
-       /* hover */ 
-        $(".navbar-custom a").hover(function () {
-          $(this).css("color", "#ffb74d");
-        }, function(){
-          $(this).css("color", "white");
-        });
-      }
-      else {
-        $('.navbar-custom').css("background-color", "#eeeeee");
-        $('.navbar-custom a').css('color', 'black');
-
-        /* Hover */
-        $(".navbar-custom a").hover(function () {
-          $(this).css("color", "royalblue");
-        }, function(){
-          $(this).css("color", "black");
-        });
-
-      }
+    window.addEventListener('scroll', function() {
+      console.log(1);
     });
 
+      var distance = $('#navbar').offset().top,
+        $window = $(window);
 
+      $window.scroll(function () {
+        if ($window.scrollTop() >= distance + 80) {
+          $('.navbar-custom').css("display", "block");
+        }
+        else {
+          $('.navbar-custom').css("display", "none");
+          callback.closeTemplates();
+        }
+      });
   }
+
+  
 
 }

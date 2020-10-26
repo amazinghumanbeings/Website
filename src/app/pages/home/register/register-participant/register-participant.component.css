@@ -10,6 +10,33 @@ form {
     border-radius: 50px;
 }
 
+.form-inline {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 20px !important;
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+    /* transition: 0.2s ease;
+    animation: formanim 1s 1s forwards ease-out; */
+}
+
+
+/* @keyframes formanim {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+        width: 50%;
+    }
+    99.9% {
+        opacity: 0.9;
+        width: 90%;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+} */
+
 .form-inline .input {
     padding: 14px 70px 14px 24px;
     border-radius: 50px;
@@ -36,7 +63,7 @@ form .input:focus {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 16px 32px, rgba(0, 0, 0, 0.1) 0px 3px 8px;
     border: none !important;
     outline: none !important;
-    transform: scaleX(1.08);
+    transform: scaleX(1.05);
 }
 
 form .input:focus>.vl {
@@ -86,6 +113,8 @@ form .custom-search-btn {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 20px !important;
     background-color: white;
     padding: 30px 40px;
+    position: relative;
+    z-index: 1;
 }
 
 .form-group label {
