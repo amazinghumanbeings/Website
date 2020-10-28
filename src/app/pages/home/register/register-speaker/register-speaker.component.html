@@ -8,6 +8,7 @@
             <div class="subhead">
                 Describe your session
             </div>
+            <span *ngIf='sessionLine'></span>
             </button>
 
             <div class="vl"></div>
@@ -19,6 +20,7 @@
             <div class="subhead">
                 Date Range
             </div>
+            <span *ngIf='dateLine'></span>
             </button>
 
             <div class="vl"></div>
@@ -30,6 +32,7 @@
             <div class="subhead">
                 Additional Requirements
             </div>
+            <span *ngIf='attendLine'></span>
             </button>
 
             <div class="vl"></div>
@@ -41,6 +44,7 @@
             <div class="subhead">
                 Tell us about yourself
             </div>
+            <span *ngIf='speakerLine'></span>
             </button>
 
             <div class="vl"></div>
@@ -52,13 +56,14 @@
             <div class="subhead">
                 To reach out to you
             </div>
+            <span *ngIf='contactLine'></span>
             </button>
 
-            <input type="text" class="form-control" id="SesionDetails">
+            <!-- <input type="text" class="form-control" id="SesionDetails">
             <input type="text" class="form-control" id="DateRange">
             <input type="text" class="form-control" id="Addtional">
             <input type="text" class="form-control" id="AboutYou">
-            <input type="text" class="form-control" id="ContactDetails">
+            <input type="text" class="form-control" id="ContactDetails"> -->
             <button *ngIf='iconBtn' type="submit" class="custom-btn btn btn-primary" data-toggle="modal" data-target="#logModal">
                 <i class="fa fa-search" aria-hidden="true"></i>
             </button>

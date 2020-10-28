@@ -15,6 +15,12 @@ export class RegisterSpeakerComponent {
   dateTemplate: boolean = false;
   speakerTemplate: boolean = false;
   contactTemplate: boolean = false;
+  sessionLine: boolean = false;
+  attendLine: boolean = false;
+  dateLine: boolean = false;
+  speakerLine: boolean = false;
+  contactLine: boolean = false;
+
 
   constructor() { }
 
@@ -26,6 +32,11 @@ export class RegisterSpeakerComponent {
     this.dateTemplate = false;
     this.speakerTemplate = false;
     this.contactTemplate = false;
+    this.sessionLine = true;
+    this.attendLine = false;
+    this.dateLine = false;
+    this.speakerLine = false;
+    this.contactLine = false;
 
   }
 
@@ -36,6 +47,11 @@ export class RegisterSpeakerComponent {
     this.dateTemplate = false;
     this.speakerTemplate = false;
     this.contactTemplate = false;
+    this.sessionLine = false;
+    this.attendLine = true;
+    this.dateLine = false;
+    this.speakerLine = false;
+    this.contactLine = false;
   }
 
   showDateTemplate() {
@@ -45,33 +61,58 @@ export class RegisterSpeakerComponent {
     this.sessionTemplate = false;
     this.speakerTemplate = false;
     this.contactTemplate = false;
+    this.sessionLine = false;
+    this.attendLine = false;
+    this.dateLine = true;
+    this.speakerLine = false;
+    this.contactLine = false;
   }
 
-  showSpeakerTemplate(){
+  showSpeakerTemplate() {
     this.template = true;
     this.speakerTemplate = true;
     this.dateTemplate = false;
     this.attendTemplate = false;
     this.sessionTemplate = false;
     this.contactTemplate = false;
+    this.sessionLine = false;
+    this.attendLine = false;
+    this.dateLine = false;
+    this.speakerLine = true;
+    this.contactLine = false;
   }
 
-  showContactTemplate(){
+  showContactTemplate() {
     this.template = true;
     this.contactTemplate = true;
     this.speakerTemplate = false;
     this.dateTemplate = false;
     this.attendTemplate = false;
     this.sessionTemplate = false;
+    this.sessionLine = false;
+    this.attendLine = false;
+    this.dateLine = false;
+    this.speakerLine = false;
+    this.contactLine = true;
   }
 
-  btnChange(){
+  btnChange() {
     this.iconBtn = (this.template) ? false : true;
     this.searchBtn = (this.template) ? true : false;
   }
 
   onClickedOutside(e: Event) {
     this.template = false;
+    this.sessionTemplate = false;
+    this.attendTemplate = false;
+    this.dateTemplate = false;
+    this.speakerTemplate = false;
+    this.contactTemplate = false;
+    this.sessionLine = false;
+    this.attendLine = false;
+    this.dateLine = false;
+    this.speakerLine = false;
+    this.contactLine = false;
   }
 
 }

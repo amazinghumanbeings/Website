@@ -40,7 +40,6 @@
         background-color: #f5f5f5;
         padding: .5rem 3rem;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        display: none;
         z-index: 10 !important;
     }
     /* Registration Module */
@@ -119,3 +118,9 @@
         border: none !important;
         font-family: 'Open Sans', sans-serif;
     }
+    /* Mobile Layout Css */
+    /* @media (max-width: 500px) {
+        .lap-nav {
+            display: none;
+        }
+    } */

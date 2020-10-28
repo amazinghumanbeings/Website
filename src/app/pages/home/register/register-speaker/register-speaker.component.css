@@ -1,7 +1,9 @@
 .form-container {
     display: flex;
     justify-content: center;
-    margin: 10px 80px;
+    margin: 10px 20px;
+    position: relative;
+    z-index: 1;
 }
 
 form {
@@ -21,6 +23,19 @@ form {
     font-size: 14px;
     background: white;
     text-align: left;
+    position: relative;
+}
+
+.form-inline .input span {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    bottom: 0;
+    left: 20%;
+    border-bottom: 4px solid #ff385c;
+    position: absolute;
+    border-radius: 30px;
 }
 
 .form-inline button:last-child {
@@ -41,10 +56,7 @@ form .input:focus {
     border: none !important;
     outline: none !important;
     transform: scaleX(1.05);
-}
-
-form .input:focus>.vl {
-    border: none;
+    z-index: 1;
 }
 
 form .input .head {
@@ -87,11 +99,9 @@ form .custom-search-btn {
 .form-outer .templates {
     margin-top: 12px;
     border-radius: 32px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 20px !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: white;
     padding: 30px 40px;
-    position: relative;
-    z-index: 1;
 }
 
 .form-group label {

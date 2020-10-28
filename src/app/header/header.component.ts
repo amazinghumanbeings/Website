@@ -59,7 +59,7 @@ export class HeaderComponent implements OnInit {
         $window = $(window);
 
       $window.scroll(function () {
-        if ($window.scrollTop() >= distance + 80) {
+        if ($window.scrollTop() >= distance + 180) {
           $('.navbar-custom').css("display", "block");
         }
         else {

@@ -4,18 +4,16 @@
 }
 
 .category {
-    display: flex;
-    justify-content: space-evenly;
+    display: block;
     margin: 16px auto;
     padding-bottom: 16px;
-    /* border-bottom: 1px solid lightgrey; */
-    align-items: center;
 }
 
 .category .vl {
     border-left: 2px solid #cfd8dc;
     height: 25px;
     margin: 0px 5px;
+    display: inline;
 }
 
 .categoryTemplate {
@@ -25,7 +23,17 @@
     padding: 15px;
     float: right;
     margin: -20px 20px 20px 0px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 20px !important
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 20px;
+}
+
+.category button:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 24px;
+    /* border: 2px solid transparent; */
+}
+
+.category button:focus {
+    box-shadow: none;
+    border: 2px solid black;
 }
 
 .category button,
@@ -33,10 +41,11 @@
     cursor: pointer;
     background: transparent;
     border-radius: 22px;
-    border: 1px solid lightgrey;
+    border: 2px solid lightgrey;
     padding: 8px 16px;
     margin: 5px;
     font-size: 14px;
+    outline: none;
 }
 
 .slider-title {

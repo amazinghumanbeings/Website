@@ -12,13 +12,14 @@
             <button>Dance +</button>
             <button>Coding +</button>
             <button>Web Development +</button>
-            <button>Writing +</button>
             <button>Sports +</button>
-            <button>Arts +</button>
             <button>Research +</button>
+            <button>Fitness +</button>
             <button>Social Impact +</button>
             <button *ngIf="!categoryTemplate" (click)="openCategoryTemplate()"><i class="fa fa-angle-down"></i></button>
-            <button *ngIf="categoryTemplate" (click)="closeCategoryTemplate()"><i class="fa fa-angle-up"></i></button>
+            <button class='up' style="border:2px solid #ff385c;" *ngIf="categoryTemplate" (click)="closeCategoryTemplate()">
+                <i class="fa fa-angle-up"></i>
+            </button>
         </div>
 
         <div *ngIf="categoryTemplate" class="categoryTemplate">

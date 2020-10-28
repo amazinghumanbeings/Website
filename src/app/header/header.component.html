@@ -1,59 +1,4 @@
-<!-- <div class='head'>
-    <img src='assets/Images/logo.png'>
-    <h4>Amazing Human Being</h4>
-    <h6>'An inclusive ecosystem of humans' -</h6>
-    <p>A Journey towards self transformation through skills</p>
-</div>
-
-<nav id='navbar' class="navbar sticky-top navbar-custom">
-    <div class="d-flex justify-content-between">
-        <a href=''>
-            <div class="p-2">iam@amazinghuman.in</div>
-        </a>
-        <div class="p-2">|</div>
-        <a href=''>
-            <div class="p-2">+919840969548</div>
-        </a>
-    </div>
-    <div class="d-flex justify-content-between">
-        <a href='home'>
-            <div class="p-2">Home</div>
-        </a>
-        <a href=''>
-            <div class="p-2">About</div>
-        </a>
-        <a href=''>
-            <div class="p-2">Our Story</div>
-        </a>
-        <a href='initiative'>
-            <div class="p-2">Our initiative</div>
-        </a>
-        <a href='team'>
-            <div class="p-2">Our Team</div>
-        </a>
-        <a href=''>
-            <div class="p-2">Agreement</div>
-        </a>
-    </div>
-    <div class="d-flex justify-content-between">
-        <div class='icon'>
-            <a href=''><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href=''><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href=''><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href=''><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-            <a href=''><i class="fab fa-blogger-b" aria-hidden="true"></i></a>
-            <a href=''><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            <a href=''><i class="fa fa-user-circle" aria-hidden="true"></i></a>
-            <a class='' href='signin'>
-                <div class="fa login">Login</div>
-            </a>
-        </div>
-    </div>
-</nav>
-
-<br> -->
-
-<nav id='navbar' class="navbar sticky-top navbar-custom" (clickOutside)="onClickOutside($event)">
+<nav id='navbar' class="navbar sticky-top navbar-custom lap-nav" (clickOutside)="onClickOutside($event)">
     <div class='reg-option d-flex justify-content-between'>
         <div style="padding: 0px 190px 0px 50px;">
             <a href="home">
@@ -103,105 +48,30 @@
 
     </div>
 
-
-
-    <!-- <div class="d-flex justify-content-between">
-        <div style="padding: 0px 190px 0px 50px;">
-            <a href="home">
-                <img src="assets/Images/logo.png" alt="" style="height:50px">
-            </a>
-        </div>
-    </div>
-    <div class="d-flex justify-content-between reg-option">
-        <button class='opt' (click)='openSpeakerTemplate()'>
-            Register as a Speaker
-            <span *ngIf='speakerLine'></span>
-        </button>
-
-
-        <button class="opt" (click)='openParticipantTemplate()'>
-            Register as a Participant
-            <span *ngIf='participantLine'></span>
-        </button>
-    </div>
-    <div class="d-flex justify-content-between reg-option">
-        <button routerLink="" class="trans_btn">About AHB</button>
-
-        <button mat-button [matMenuTriggerFor]="navlang" class="trans_btn">
-                <i class="fa fa-globe space"></i>
-                <i class="fa fa-angle-down space"></i>
-            </button>
-        <mat-menu #navlang="matMenu">
-            <button mat-menu-item>English</button>
-            <button mat-menu-item>Tamil</button>
-        </mat-menu>
-
-        <button mat-button [matMenuTriggerFor]="navprofile" class="white_btn">
-                <i class="fa fa-bars space"></i>
-                <i class="fa fa-user space"></i>
-            </button>
-        <mat-menu #navprofile="matMenu">
-            <button mat-menu-item data-toggle="modal" data-target="#logModal">Sign up</button>
-            <button mat-menu-item data-toggle="modal" data-target="#logModal">Login</button>
-            <mat-divider></mat-divider>
-            <button mat-menu-item>Join as a host</button>
-            <button mat-menu-item>Join as a participant</button>
-            <button mat-menu-item>Join as a co-creator</button>
-        </mat-menu>
-    </div> -->
-
-    <!-- Registeration Module -->
-
-    <!-- <div class='reg-option d-flex justify-content-between'>
-        <div style="padding: 0px 190px 0px 50px;">
-            <a href="home">
-                <img src="assets/Images/logo.png" alt="" style="height:50px">
-            </a>
-        </div>
-
-        <div>
-            <button class='opt' (click)='openSpeakerTemplate()'>
-            Register as a Speaker
-            <span *ngIf='speakerLine'></span>
-        </button>
-
-
-            <button class="opt" (click)='openParticipantTemplate()'>
-            Register as a Participant
-            <span *ngIf='participantLine'></span>
-        </button>
-        </div>
-
-        <div>
-            <button routerLink="" class="trans_btn">About AHB</button>
-
-            <button mat-button [matMenuTriggerFor]="lang" class="trans_btn">
-                <i class="fa fa-globe space"></i>
-                <i class="fa fa-angle-down space"></i>
-            </button>
-            <mat-menu #lang="matMenu" class='sub-menu'>
-                <button mat-menu-item>English</button>
-                <button mat-menu-item>Tamil</button>
-            </mat-menu>
-
-            <button mat-button [matMenuTriggerFor]="profile" class="white_btn">
-                <i class="fa fa-bars space"></i>
-                <i class="fa fa-user space"></i>
-            </button>
-            <mat-menu #profile="matMenu" class='sub-menu'>
-                <button mat-menu-item data-toggle="modal" data-target="#logModal">Sign up</button>
-                <button mat-menu-item data-toggle="modal" data-target="#logModal">Login</button>
-                <mat-divider></mat-divider>
-                <button mat-menu-item>Join as a host</button>
-                <button mat-menu-item>Join as a participant</button>
-                <button mat-menu-item>Join as a co-creator</button>
-            </mat-menu>
-
-        </div>
-    </div> -->
     <div class="templates">
         <app-register-speaker *ngIf='speakerTemplate'></app-register-speaker>
         <app-register-participant *ngIf='participantTemplate'></app-register-participant>
     </div>
 
 </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Mobile Layout -->
+
+
+<!-- <nav id='navbar' class="navbar sticky-top navbar-custom mob-nav" (clickOutside)="onClickOutside($event)">
+    <div class='reg-option d-flex justify-content-between'>
+        <p> Mobile Navbar </p>
+    </div>
+</nav> -->
